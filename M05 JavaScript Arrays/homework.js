@@ -221,7 +221,22 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
    // num.map(sumarUno => sumarUno + 2)
-   
+   let arrNum = []
+   let suma = num
+   for (let index = 0; index < 10; index++) {
+      suma = suma + 2
+      if (suma === index) {
+         break
+      } else {
+         arrNum.push(suma)
+      }
+      
+   }
+   if (arrNum.length < 10) {
+      return 'Se interrumpió la ejecución'
+   }else if (arrNum.length === 10){
+      return arrNum
+   }
    } 
 
 function continueStatement(num) {
@@ -231,6 +246,21 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   let arrNum = []
+   let suma = num
+   for (let index = 0; index < 10; index++) {
+      //NOTA index = 5 es la sexta interacción, no la quinta
+      //ciclo   1    2     3     4     5     | 6 |     7     8
+      //index  [0,   1,    2,    3,    4,   | 5 |,    6,    7]
+      if (index === 5) {
+         continue
+      } else {
+         suma = suma + 2
+         arrNum.push(suma)
+      }
+   }
+   return arrNum
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
