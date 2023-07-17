@@ -143,13 +143,19 @@ function buscoInterseccion(array1, array2) {
    let newArr = []
 
 array1.forEach(element => {
+
+   //método 1
    // if (array2.includes(element)) {
    //  newArr.push(element)  
    // }
+ 
+   //método 2
    if (array2.some(value => value === element)) {
       newArr.push(element)
-   }
+   } 
 });
+
+
    return newArr
 }
 
