@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
         rel="stylesheet">
     <!--  -->
 
-    <title>About</title>
+    <title>Contact</title>
 </head>
 <body>
     <nav class="nav-menu">
@@ -28,17 +28,28 @@
         </ul>
     </nav>
 
-
     <main>
-        <h1>Información general </h1>
-        <p>Somos 4, Mi esposa Eugenia, mi hijo mayor Ethan con 26 meses y el menor Evans de 11 meses y yo Luis. Es
-            difícil estudiar con 2 niños pequeños en casa, pero con el apoyo de mi esposa he podido avanzar en este
-            curso y ver a mis niños crecer, por eso este, mi <strong>Hogar</strong> es mi lugar favorito: <mark>¡con
-                esposa e hijos!.</mark> </p>
+        <h1>Contacto</h1>
 
-        <p><strong>Nuestra Historia</strong> <br>Como pareja tenemos <i>15 años</i> juntos y como casados solo 2 meses.
-            No han sido todos los 15 años de felicidad, hemos tenido altos y bajos, pero coincidimos que nuestro amor es
-            mas grande que nosotros y que 1 problema entre dos se vuelve 1/<sub>2</sub> problema.</p>
+        <form action="mailto:diazr.info@gmail.com" method="post" id="form1">
+
+            <label for="user">Nombre de Usurario:_</label>
+            <input id="user" name="usuario" type="text" value="" placeholder="usuario" required>
+
+            <br>
+            <label for="emal">Correo Electrónico:__</label>
+            <input id="email" name="correo" type="email" value="" placeholder="example@vida.com" required>
+
+            <br><br>
+            <label for="textArea">Adicional:__</label>
+            <textarea id="textArea" name="textArea" id="textArea" cols="29" rows="5" placeholder="Escríbase algo"
+                required></textarea>
+
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar" form="form1" name="resetButton">
+        </form>
     </main>
+
 </body>
 </html>

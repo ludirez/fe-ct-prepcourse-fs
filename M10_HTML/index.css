@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    /* font-family: 'Alkatra', cursive; */
+    /* font-family: 'Boogaloo', cursive; */
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Righteous', cursive; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Ubuntu Mono', monospace; */
+    min-height: 300px;
+    /* max-width: 1024px; */
+    margin: auto;
+}
+
+
+/* Nav Menu */
+nav{
+    background-color: rgb(36, 80, 122);
+    padding: 12px ;
+    
+}
+nav ul{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 1024px;
+    margin: auto;    
+}
+nav.nav-menu ul li{
+    margin: 4px 10px;
+    width: max-content;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+nav ul li a{
+    color:  rgb(36, 80, 122);
+}
+nav ul li a:hover{
+    font-size: 1.2rem;
+}
+/* ---- */
+
+
+/* General */
+h1{
+    font-family: 'Alkatra', cursive;
+}
+main{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+}
+/* ---- */
+

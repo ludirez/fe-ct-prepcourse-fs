@@ -3,50 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Boogaloo&family=Jost:ital,wght@0,300;0,500;1,300;1,500&family=Righteous&family=Shadows+Into+Light&family=Ubuntu+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!--  -->
+
     <title>Entertainment</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-menu">
         <ul>
-            <a href="./index.html">
-                <li>Home</li>
-            </a>
-            <a href="./about.html">
-                <li>About Us</li>
-            </a>
-            <a href="./accommodation.html">
-                <li>Accommodation</li>
-            </a>
-            <a href="./visits and Activities.html">
-                <li>Visits Activities</li>
-            </a>
-            <a href="./entertainment.html">
-                <li>Entertainment</li>
-            </a>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./accommodation.html">Accommodation</a></li>
+            <li><a href="./visits and Activities.html">Visits Activities</a></li>
+            <li><a href="./entertainment.html">Entertainment</a></li>
+            <li><a href="./form.html">Contacto</a></li>
         </ul>
     </nav>
 
-    <h1>Lugares para Entretenerse</h1>
+    <main>
+        <h1>Lugares para Entretenerse</h1>
 
-    <section style="border: 1px solid purple;max-width:1024px">
-        <h2>Para la Familia</h2>
-        <div style="border: 1px solid brown;display: flex;">
-            <div style="border: 4px solid orange; width: 50%;">
-                <img src="https://gcdn.emol.cl/espiritualidad/files/2018/11/diversion-1.jpg" alt="" width="100%">
+        <section style="max-width:1024px; text-align: center;">
+            <h2>Para la Familia</h2>
+            <div style="display: flex;">
+                <div style=" width: 50%;">
+                    <img src="https://gcdn.emol.cl/espiritualidad/files/2018/11/diversion-1.jpg" alt="" width="100%">
+                </div>
+                <div
+                    style=" width: 50%; display: flex; flex-direction: column; justify-content: center; text-align: left;">
+                    <ul>
+                        <li> VIsita la historia Universidad de Salamanca <a href="https://www.usal.es/"><button>ir a
+                                    Salamanca</button></a></li>
+                        <br>
+                        <li> Tour por el Coliseo Romano <a
+                                href="https://www.rome-museum.com/es/coliseo-romano.php"><button>Vamos Al
+                                    coliseo</button></a></li>
+                        <br>
+                        <li> Tour por Torre Eiffel <a href="https://www.toureiffel.paris/es"><button>ir a
+                                    sitio</button></a>
+                        </li>
+                        <br>
+                    </ul>
+                </div>
             </div>
-            <div style="border: 4px solid orangered; width: 50%;">
-                <ul>
-                    <li> un lugar muy bonito para visitar en familia <button>ir a lugar 1</button></li>
-                    <br>
-                    <li> un lugar muy bonito para visitar en familia <button>ir a lugar 1</button></li>
-                    <br>
-                    <li> un lugar muy bonito para visitar en familia <button>ir a lugar 1</button></li>
-                    <br>
-                </ul>
-            </div>
-        </div>
 
+        </section>
+    </main>
+
+
+
+    <!-- 
+    <section>
+        <h3>Formulario de ejemplo</h3>
+        name : Con ese nombre después se accede a su valor en el archivo indicado en el action. Un "input" sin name no se envía.
+        value : valor predeterminado al "input". varia según el "type"
+        type : define la función del "input"
+        action: enlace al documento que recibe los datos
+        Method: get : se envía la info por la URL
+        Method: post : se envía la info oculta
+        enctype: app... : valor default
+        enctype: multipart.. : si se envia archivos adjuntos en el form
+        enctype: text... : ambiguo. leer más
+
+        <form action="datos.js" method="get">
+
+            <label for="nombre">Nombre Completo: </label>
+            <input type="text" name="nombre" value="">
+
+            <br>
+            <label for="emal">Correo electrónico: </label>
+            <input type="email" name="email" value="" id="">
+
+            <br><br>
+            <label for="Genero">Género: </label>
+            <br>
+            <input type="radio" name="genero" id="female" value="F">
+            <label for="female">Mujer</label>
+            <input type="radio" name="genero" id="male" value="M">
+            <label for="male">Hombre</label>
+
+
+            <br><br>
+
+            <label for="grupo">Seleccione Modelo: </label>
+
+            <input type="checkbox" name="grupo" id="opcion1" value="op1">
+            <label for="opcion1"> Opción 1</label>
+
+            <input type="checkbox" name="grupo" id="opcion2" value="op2">
+            <label for="opcion2"> Opción 2</label>
+
+
+            <br><br>
+            <label for="tallas">Tallas: </label>
+            <select name="tallas" id="">
+                <option value="L">Large</option>
+                <option value="M">Medium</option>
+                <option value="S">Small</option>
+            </select>
+
+            <br><br>
+            <label for="consulta">Adicional: </label>
+            <textarea name="consulta" id="" cols="29" rows="05"></textarea>
+
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar" id="">
+
+        </form>
     </section>
+     -->
 
 </body>
 </html>
